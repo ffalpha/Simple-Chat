@@ -1,5 +1,6 @@
 import React from "react";
 import firebase from "firebase/app";
+import "../App.css";
 function Signin({ auth }) {
   const signInWithGoogle = () => {
     var provider = new firebase.auth.GoogleAuthProvider();
