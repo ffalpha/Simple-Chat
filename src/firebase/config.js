@@ -11,7 +11,8 @@ firebase.initializeApp({
   appId: process.env.REACT_APP_FIREBASE_APP_ID,
   measurementId: process.env.REACT_APP_FIREBASE_MEASURMENT_ID,
 });
-firebase.auth();
-firebase.firestore();
+const auth = firebase.auth();
+const firestore = firebase.firestore();
 
-export default firebase;
+// eslint-disable-next-line import/no-anonymous-default-export
+export { auth, firestore };
