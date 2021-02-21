@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <header> {user ? <SignOut /> : <div>Simple Chat</div>}</header>
-      <section style={{ justifyContent: "center" }}>
+      <section style={{ justifyContent: "center", alignitems: "center" }}>
         {user ? <Chatroom firestore={firestore} auth={auth} /> : <SignIn />}
       </section>
     </div>

@@ -29,6 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   min-height: 100vh;
   background-color: rgb(40, 37, 53);
 }
@@ -83,6 +84,7 @@ input {
 
 button {
   justify-content: center;
+
   max-width: 50%;
   background-color: #1eb83f; /* Green */
   border: none;
