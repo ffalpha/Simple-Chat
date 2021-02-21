@@ -11,8 +11,8 @@ function App() {
 
   return (
     <div className="App">
-      <header></header>
-      <section>
+      <header> {user ? <SignOut /> : <div>Simple Chat</div>}</header>
+      <section style={{ justifyContent: "center" }}>
         {user ? <Chatroom firestore={firestore} auth={auth} /> : <SignIn />}
       </section>
     </div>
